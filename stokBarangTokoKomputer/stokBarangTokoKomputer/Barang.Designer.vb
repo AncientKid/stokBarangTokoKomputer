@@ -34,8 +34,8 @@ Partial Class Barang
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader0 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -93,6 +93,7 @@ Partial Class Barang
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.ComboBox1.Location = New System.Drawing.Point(93, 171)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(89, 21)
@@ -159,13 +160,6 @@ Partial Class Barang
         Me.Panel2.Size = New System.Drawing.Size(468, 30)
         Me.Panel2.TabIndex = 1
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(212, 6)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(167, 20)
-        Me.TextBox3.TabIndex = 10
-        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(385, 4)
@@ -174,6 +168,13 @@ Partial Class Barang
         Me.Button3.TabIndex = 10
         Me.Button3.Text = "Cari"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(212, 6)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(167, 20)
+        Me.TextBox3.TabIndex = 10
         '
         'Panel3
         '
