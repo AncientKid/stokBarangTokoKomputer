@@ -77,8 +77,20 @@
       <DependentUpon>Barang.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FSupplier.Designer.vb">
+      <DependentUpon>FSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Hash.vb" />
     <Compile Include="Koneksi.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -94,7 +106,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pengguna.Designer.vb">
+      <DependentUpon>Pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Progress.vb" />
+    <Compile Include="stok.Designer.vb">
+      <DependentUpon>stok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokBarang.Designer.vb">
+      <DependentUpon>stokBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stokBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Barang.resx">
@@ -105,6 +135,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengguna.resx">
+      <DependentUpon>Pengguna.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
