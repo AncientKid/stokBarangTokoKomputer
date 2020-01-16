@@ -13,13 +13,13 @@ Public Class stok
         'seperti <option value="xxx">yyy</option> pada HTML
         Progress.showProgress(ProgressBar1)
 
-        Dim sql As String = "select id_supplier, nama, alamat, telepon from supplier"
+        Dim sql As String = "select id_supplier, nama_supplier, alamat, telepon from supplier"
 
         'ambil data table
         dtSupplier = Await Task(Of DataTable).Factory.StartNew(Function() Koneksi.getList(sql))
 
         cb_supplier.DataSource = dtSupplier
-        cb_supplier.DisplayMember = "nama"
+        cb_supplier.DisplayMember = "nama_supplier"
         cb_supplier.ValueMember = "id_supplier"
 
         cb_supplier_SelectedIndexChanged(Nothing, Nothing)
@@ -36,8 +36,6 @@ Public Class stok
             .Columns.Add("IDBarang", 120, HorizontalAlignment.Left)
             .Columns.Add("Nama", 200, HorizontalAlignment.Left)
             .Columns.Add("Qty", 70, HorizontalAlignment.Right)
-            .Columns.Add("Harga", 120, HorizontalAlignment.Right)
-            .Columns.Add("Jumlah", 120, HorizontalAlignment.Right)
         End With
     End Sub
 
@@ -68,13 +66,10 @@ Public Class stok
     '    hitungTotal()
     'End Sub
 
-    Private Sub ListView1_MouseDown(sender As Object, e As MouseEventArgs) Handles lv_stok.MouseDown
 
-    End Sub
 
     Private Sub HapusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusToolStripMenuItem.Click
         lv_stok.Items.Remove(lv_stok.SelectedItems(0))
-        'hitungTotal()
     End Sub
 
     Private Sub UbahToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahToolStripMenuItem.Click
@@ -85,7 +80,6 @@ Public Class stok
         End With
 
         lv_stok.Items.Remove(lv_stok.SelectedItems(0))
-        'hitungTotal()
     End Sub
 
     Private Async Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -110,13 +104,13 @@ Public Class stok
             Task.WaitAll(myTask)
 
             Dim dt As DataTable = Await Task(Of DataTable).Factory.StartNew(
-                Function() Koneksi.getLastID("pembelian", "id_beli"))
-            Dim id_beli As String = dt.Rows(0).Item(0).ToString
+                Function() Koneksi.getLastID("stok", "id_stok"))
+            Dim id_stok As String = dt.Rows(0).Item(0).ToString
 
             For i As Integer = 0 To lv_stok.Items.Count - 1
-                sql = "insert into detail_pembelian values (" & id_beli & ", " &
+                sql = "insert into detail_stok values (" & id_stok & ", " &
                     "" & lv_stok.Items(i).Text & ", " &
-                    "" & lv_stok.Items(i).SubItems(3).Text & ", " &
+                    "" & lv_stok.Items(i).SubItems(1).Text & ", " &
                     "" & lv_stok.Items(i).SubItems(2).Text & ");"
                 myTask = Task.Factory.StartNew(Sub() Koneksi.exec(sql))
                 Task.WaitAll(myTask)
@@ -167,5 +161,4 @@ Public Class stok
             ContextMenuStrip1.Show(MousePosition.X, MousePosition.Y)
         End If
     End Sub
-
 End Class

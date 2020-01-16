@@ -139,6 +139,12 @@
     <EmbeddedResource Include="Pengguna.resx">
       <DependentUpon>Pengguna.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokBarang.resx">
+      <DependentUpon>stokBarang.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">

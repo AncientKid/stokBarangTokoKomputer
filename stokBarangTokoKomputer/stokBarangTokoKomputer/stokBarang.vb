@@ -12,7 +12,7 @@ Public Class stokBarang
         tb_qty.Text = ""
     End Sub
     Async Function loadBarang() As Threading.Tasks.Task
-        Dim sql As String = "select id_barang, nama from barang"
+        Dim sql As String = "select id_barang, nama_barang from barang"
 
         Progress.showProgress(ProgressBar1)
 
@@ -20,7 +20,7 @@ Public Class stokBarang
         dtBarang = Await Task(Of DataTable).Factory.StartNew(Function() Koneksi.getList(sql))
 
         cb_barang.DataSource = dtBarang
-        cb_barang.DisplayMember = "nama"
+        cb_barang.DisplayMember = "nama_barang"
         cb_barang.ValueMember = "id_barang"
 
         cb_barang_SelectedIndexChanged(Nothing, Nothing)

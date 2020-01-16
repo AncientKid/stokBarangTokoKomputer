@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class stok
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class stok
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -40,10 +40,13 @@ Partial Class stok
         Me.cb_supplier = New System.Windows.Forms.ComboBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.UbahToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HapusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -66,7 +69,7 @@ Partial Class stok
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
         Me.Panel2.Size = New System.Drawing.Size(560, 159)
-        Me.Panel2.TabIndex = 4
+        Me.Panel2.TabIndex = 1
         '
         'lv_stok
         '
@@ -209,8 +212,21 @@ Partial Class stok
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UbahToolStripMenuItem, Me.HapusToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(181, 70)
+        '
+        'UbahToolStripMenuItem
+        '
+        Me.UbahToolStripMenuItem.Name = "UbahToolStripMenuItem"
+        Me.UbahToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UbahToolStripMenuItem.Text = "Ubah"
+        '
+        'HapusToolStripMenuItem
+        '
+        Me.HapusToolStripMenuItem.Name = "HapusToolStripMenuItem"
+        Me.HapusToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HapusToolStripMenuItem.Text = "Hapus"
         '
         'stok
         '
@@ -226,6 +242,7 @@ Partial Class stok
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -246,4 +263,6 @@ Partial Class stok
     Friend WithEvents cb_supplier As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents UbahToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HapusToolStripMenuItem As ToolStripMenuItem
 End Class

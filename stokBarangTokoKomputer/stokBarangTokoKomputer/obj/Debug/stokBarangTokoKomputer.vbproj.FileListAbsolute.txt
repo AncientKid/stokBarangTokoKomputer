@@ -8,3 +8,18 @@ D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKom
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.exe
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.xml
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.pdb
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\stokBarangTokoKomputer.exe.config
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\stokBarangTokoKomputer.exe
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\stokBarangTokoKomputer.pdb
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\stokBarangTokoKomputer.xml
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.vbprojAssemblyReference.cache
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.Barang.resources
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.Resources.resources
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.Pengguna.resources
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.stok.resources
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.stokBarang.resources
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.vbproj.GenerateResource.cache
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.vbproj.CoreCompileInputs.cache
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.exe
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.xml
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.pdb
