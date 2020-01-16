@@ -18,7 +18,7 @@ Public Class Barang
         If cari = Nothing Then
             sql = "select * from barang"
         Else
-            sql = "select id_barang, nama_barang, stok, rak from barang " & _
+            sql = "select id_barang, nama_barang, rak from barang " &
                     "where id_barang like '%" & cari & "%'"
         End If
 
@@ -39,7 +39,6 @@ Public Class Barang
     Private Sub kosong()
         tempID = 0
         TextBox1.Text = Nothing
-        TextBox2.Text = Nothing
         ComboBox1.Text = Nothing
     End Sub
 
@@ -47,12 +46,12 @@ Public Class Barang
         Dim sql As String
 
         If tempID = 0 Then
-            sql = "insert into barang (nama_barang, stok, rak) " & _
-                "values ('" & TextBox1.Text.Trim & "' , '" & TextBox2.Text.Trim & "', " & _
+            sql = "insert into barang (nama_barang, stok, rak) " &
+                "values ('" & TextBox1.Text.Trim & "' , " &
                 "'" & ComboBox1.Text.Trim & "')"
         Else
-            sql = "update barang set nama_barang = '" & TextBox1.Text.Trim & "', " & _
-                "stok = '" & TextBox2.Text.Trim & "', rak = '" & ComboBox1.Text.Trim & "' " & _
+            sql = "update barang set nama_barang = '" & TextBox1.Text.Trim & "', " &
+                " rak = '" & ComboBox1.Text.Trim & "' " &
                 "where id_barang = " & tempID
         End If
 
@@ -69,8 +68,7 @@ Public Class Barang
         With ListView1
             tempID = .SelectedItems.Item(0).Text
             TextBox1.Text = .SelectedItems.Item(0).SubItems(1).Text
-            TextBox2.Text = .SelectedItems.Item(0).SubItems(2).Text
-            ComboBox1.Text = .SelectedItems.Item(0).SubItems(3).Text
+            ComboBox1.Text = .SelectedItems.Item(0).SubItems(2).Text
         End With
     End Sub
 

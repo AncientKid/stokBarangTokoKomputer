@@ -28,8 +28,6 @@ Partial Class Barang
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,7 +38,6 @@ Partial Class Barang
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader0 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -54,8 +51,6 @@ Partial Class Barang
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -107,22 +102,6 @@ Partial Class Barang
         Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Rak No."
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(15, 171)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(69, 20)
-        Me.TextBox2.TabIndex = 4
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 155)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(29, 13)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Stok"
         '
         'TextBox1
         '
@@ -187,9 +166,10 @@ Partial Class Barang
         '
         'ListView1
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader0, Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader0, Me.ColumnHeader1, Me.ColumnHeader3})
         Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView1.GridLines = True
+        Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(0, 0)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(468, 412)
@@ -206,11 +186,6 @@ Partial Class Barang
         '
         Me.ColumnHeader1.Text = "Nama Barang"
         Me.ColumnHeader1.Width = 152
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Jumlah Stok"
-        Me.ColumnHeader2.Width = 126
         '
         'ColumnHeader3
         '
@@ -238,8 +213,6 @@ Partial Class Barang
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -253,7 +226,6 @@ Partial Class Barang
     Friend WithEvents ListView1 As System.Windows.Forms.ListView
     Friend WithEvents ColumnHeader0 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
 
 End Class

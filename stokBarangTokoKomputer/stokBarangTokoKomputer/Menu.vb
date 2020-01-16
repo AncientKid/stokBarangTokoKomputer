@@ -1,7 +1,4 @@
 ﻿Public Class Menu
-    Private Sub PembelianToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem1.Click
-
-    End Sub
 
     Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
         End
@@ -40,13 +37,13 @@
         Barang.MdiParent = Me
     End Sub
 
-   
-    Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub PembelianToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem2.Click
+    Private Sub StokToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StokToolStripMenuItem.Click
         stok.Show()
         stok.MdiParent = Me
+    End Sub
+
+    Private Sub LaporanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanToolStripMenuItem.Click
+        Laporan.Show()
+        Laporan.MdiParent = Me
     End Sub
 End Class
