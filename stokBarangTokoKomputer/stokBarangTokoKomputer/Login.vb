@@ -22,15 +22,15 @@ Public Class Login
             pass = Nothing
         End If
 
-        Sql = "select * from pengguna where email = '" & tb_username.Text.Trim & "' and " &
+        Sql = "select * from pengguna where username = '" & tb_username.Text.Trim & "' and " &
                 "pwd = '" & pass & "' and aktif = true"
 
         Progress.showProgress(ProgressBar1)
-        Dim dt As DataTable = Await Task(Of DataTable).Factory.StartNew(Function() koneksi.getList(Sql))
+        Dim dt As DataTable = Await Task(Of DataTable).Factory.StartNew(Function() Koneksi.getList(sql))
         Progress.hideProgress(ProgressBar1)
 
         If dt.Rows.Count > 0 Then
-            'FMenu.Show()
+            FMenu.Show()
             Me.Hide()
         Else
             MsgBox("Data tak ditemukan", vbOKOnly + vbExclamation, "Pesan")

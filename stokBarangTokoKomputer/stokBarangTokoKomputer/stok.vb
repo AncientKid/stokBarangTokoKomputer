@@ -50,23 +50,6 @@ Public Class stok
         TextBox5.Text = Nothing
         DateTimePicker1.Value = Date.Now
     End Sub
-    'Sub hitungTotal()
-    '    Dim subtotal, total, dp As Long
-    '    For i As Integer = 0 To ListView1.Items.Count - 1
-    '        subtotal += Val(ListView1.Items(i).SubItems(4).Text)
-    '    Next
-
-    '    dp = Val(TextBox1.Text.Trim)
-    '    total = subtotal - dp
-
-    '    TextBox3.Text = subtotal : TextBox4.Text = total
-    'End Sub
-
-    'Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-    '    hitungTotal()
-    'End Sub
-
-
 
     Private Sub HapusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusToolStripMenuItem.Click
         lv_stok.Items.Remove(lv_stok.SelectedItems(0))
@@ -96,7 +79,6 @@ Public Class stok
         If Button2.Text = "Simpan" Then
             sql = "insert into stok (tanggal, id_supplier, term) values (" &
                 "'" & DateTimePicker1.Value & "'," & cb_supplier.SelectedValue.ToString & "," &
-                "" & Val(TextBox2.Text) & ", " &
                 "'" & TextBox5.Text & "')"
 
             Progress.showProgress(ProgressBar1)
@@ -110,8 +92,10 @@ Public Class stok
             For i As Integer = 0 To lv_stok.Items.Count - 1
                 sql = "insert into detail_stok values (" & id_stok & ", " &
                     "" & lv_stok.Items(i).Text & ", " &
-                    "" & lv_stok.Items(i).SubItems(1).Text & ", " &
                     "" & lv_stok.Items(i).SubItems(2).Text & ");"
+                '"" & lv_stok.Items(i).SubItems(1).Text & ", " &
+                '"" & lv_stok.Items(i).SubItems(2).Text & ");"
+
                 myTask = Task.Factory.StartNew(Sub() Koneksi.exec(sql))
                 Task.WaitAll(myTask)
             Next
@@ -125,10 +109,6 @@ Public Class stok
         initForm()
     End Sub
 
-    'Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-    '    FCariPembelian.ShowDialog()
-    'End Sub
-
     Async Function display(ByVal id As Integer) As Task
         sql = "select * stok where id_stok = " & id
         Dim dtPemb As DataTable = Await Task(Of DataTable).Factory.StartNew(
@@ -138,7 +118,7 @@ Public Class stok
         Dim dtDPemb As DataTable = Await Task(Of DataTable).Factory.StartNew(
             Function() Koneksi.getList(sql))
 
-        'cek apakah datanya ada?
+
         If (dtPemb.Rows.Count = 0) Then Exit Function
         If (dtDPemb.Rows.Count = 0) Then Exit Function
     End Function

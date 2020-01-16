@@ -57,7 +57,6 @@ C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\st
 C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\stdole.dll
 C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.Laporan.resources
-C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.Menu.resources
 C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.vbproj.CopyComplete
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
@@ -77,3 +76,4 @@ D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKom
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.Pengguna.resources
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.stok.resources
 D:\My Data\Campus\Visual Studio Project\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.stokBarang.resources
+C:\Users\arina\Documents\GitHub\stokBarangTokoKomputer\stokBarangTokoKomputer\stokBarangTokoKomputer\obj\Debug\stokBarangTokoKomputer.FMenu.resources

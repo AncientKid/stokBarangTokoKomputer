@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Menu
+Partial Class FMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -122,13 +122,13 @@ Partial Class Menu
         Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.KeluarToolStripMenuItem.Text = "Keluar"
         '
-        'Menu
+        'FMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(566, 330)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Name = "Menu"
+        Me.Name = "FMenu"
         Me.Text = "Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
