@@ -46,4 +46,8 @@
         Laporan.Show()
         Laporan.MdiParent = Me
     End Sub
+
+    Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        IsMdiContainer = True
+    End Sub
 End Class

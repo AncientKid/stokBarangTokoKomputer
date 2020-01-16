@@ -89,7 +89,7 @@ Partial Class Barang
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
-        Me.ComboBox1.Location = New System.Drawing.Point(93, 171)
+        Me.ComboBox1.Location = New System.Drawing.Point(15, 172)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(89, 21)
         Me.ComboBox1.TabIndex = 6
@@ -97,7 +97,7 @@ Partial Class Barang
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(90, 155)
+        Me.Label4.Location = New System.Drawing.Point(12, 156)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 5

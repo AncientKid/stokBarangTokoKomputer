@@ -28,13 +28,13 @@ Partial Class Menu
         Me.PenggunaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StokToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NormalAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MinimizeAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StokToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,19 +57,19 @@ Partial Class Menu
         'SupplierToolStripMenuItem
         '
         Me.SupplierToolStripMenuItem.Name = "SupplierToolStripMenuItem"
-        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.SupplierToolStripMenuItem.Text = "Supplier"
         '
         'PenggunaToolStripMenuItem
         '
         Me.PenggunaToolStripMenuItem.Name = "PenggunaToolStripMenuItem"
-        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.PenggunaToolStripMenuItem.Text = "Pengguna"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'TransaksiToolStripMenuItem
@@ -78,6 +78,18 @@ Partial Class Menu
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
         Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
         Me.TransaksiToolStripMenuItem.Text = "Transaksi"
+        '
+        'StokToolStripMenuItem
+        '
+        Me.StokToolStripMenuItem.Name = "StokToolStripMenuItem"
+        Me.StokToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.StokToolStripMenuItem.Text = "Stok"
+        '
+        'LaporanToolStripMenuItem
+        '
+        Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
+        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.LaporanToolStripMenuItem.Text = "Laporan"
         '
         'WindowToolStripMenuItem
         '
@@ -89,19 +101,19 @@ Partial Class Menu
         'CloseAllToolStripMenuItem
         '
         Me.CloseAllToolStripMenuItem.Name = "CloseAllToolStripMenuItem"
-        Me.CloseAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CloseAllToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.CloseAllToolStripMenuItem.Text = "Close All"
         '
         'NormalAllToolStripMenuItem
         '
         Me.NormalAllToolStripMenuItem.Name = "NormalAllToolStripMenuItem"
-        Me.NormalAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NormalAllToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.NormalAllToolStripMenuItem.Text = "Open All"
         '
         'MinimizeAllToolStripMenuItem
         '
         Me.MinimizeAllToolStripMenuItem.Name = "MinimizeAllToolStripMenuItem"
-        Me.MinimizeAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MinimizeAllToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.MinimizeAllToolStripMenuItem.Text = "Minimize All"
         '
         'KeluarToolStripMenuItem
@@ -109,18 +121,6 @@ Partial Class Menu
         Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
         Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.KeluarToolStripMenuItem.Text = "Keluar"
-        '
-        'StokToolStripMenuItem
-        '
-        Me.StokToolStripMenuItem.Name = "StokToolStripMenuItem"
-        Me.StokToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.StokToolStripMenuItem.Text = "Stok"
-        '
-        'LaporanToolStripMenuItem
-        '
-        Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
-        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.LaporanToolStripMenuItem.Text = "Laporan"
         '
         'Menu
         '
@@ -130,6 +130,7 @@ Partial Class Menu
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Menu"
         Me.Text = "Menu"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
