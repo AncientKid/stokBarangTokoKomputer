@@ -32,6 +32,8 @@ Partial Class Pengguna
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ColumnHeader0 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -40,8 +42,6 @@ Partial Class Pengguna
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -94,6 +94,7 @@ Partial Class Pengguna
         '
         Me.TextBox2.Location = New System.Drawing.Point(15, 154)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 4
         '
@@ -116,7 +117,7 @@ Partial Class Pengguna
         'ColumnHeader0
         '
         Me.ColumnHeader0.Text = "Username"
-        Me.ColumnHeader0.Width = 66
+        Me.ColumnHeader0.Width = 230
         '
         'ListView1
         '
@@ -129,6 +130,15 @@ Partial Class Pengguna
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Tipe User"
+        Me.ColumnHeader4.Width = 177
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Aktif"
         '
         'Panel3
         '
@@ -212,14 +222,6 @@ Partial Class Pengguna
         Me.CheckBox1.TabIndex = 10
         Me.CheckBox1.Text = "Aktif"
         Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Tipe User"
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Aktif"
         '
         'Pengguna
         '
