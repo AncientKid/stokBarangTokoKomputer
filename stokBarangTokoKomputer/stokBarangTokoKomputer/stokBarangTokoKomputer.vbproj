@@ -106,6 +106,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pengguna.Designer.vb">
+      <DependentUpon>Pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Progress.vb" />
     <Compile Include="stok.Designer.vb">
       <DependentUpon>stok.vb</DependentUpon>
@@ -130,11 +136,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="stok.resx">
-      <DependentUpon>stok.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="stokBarang.resx">
-      <DependentUpon>stokBarang.vb</DependentUpon>
+    <EmbeddedResource Include="Pengguna.resx">
+      <DependentUpon>Pengguna.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
