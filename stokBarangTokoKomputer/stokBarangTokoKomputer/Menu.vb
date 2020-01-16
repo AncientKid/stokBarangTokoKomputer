@@ -45,7 +45,7 @@
 
     End Sub
 
-    Private Sub PembelianToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem2.Click
+    Private Sub StokToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles StokToolStripMenuItem2.Click
         stok.Show()
         stok.MdiParent = Me
     End Sub

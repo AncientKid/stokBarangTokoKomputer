@@ -27,7 +27,7 @@ Partial Class Menu
         Me.SupplierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PenggunaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PembelianToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StokToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PembelianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,7 +52,7 @@ Partial Class Menu
         '
         'DataToolStripMenuItem
         '
-        Me.DataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SupplierToolStripMenuItem, Me.PenggunaToolStripMenuItem, Me.BarangToolStripMenuItem, Me.PembelianToolStripMenuItem2})
+        Me.DataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SupplierToolStripMenuItem, Me.PenggunaToolStripMenuItem, Me.BarangToolStripMenuItem, Me.StokToolStripMenuItem2})
         Me.DataToolStripMenuItem.Name = "DataToolStripMenuItem"
         Me.DataToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.DataToolStripMenuItem.Text = "Data"
@@ -75,11 +75,11 @@ Partial Class Menu
         Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
-        'PembelianToolStripMenuItem2
+        'StokToolStripMenuItem2
         '
-        Me.PembelianToolStripMenuItem2.Name = "PembelianToolStripMenuItem2"
-        Me.PembelianToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
-        Me.PembelianToolStripMenuItem2.Text = "stok"
+        Me.StokToolStripMenuItem2.Name = "StokToolStripMenuItem2"
+        Me.StokToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.StokToolStripMenuItem2.Text = "Stok"
         '
         'TransaksiToolStripMenuItem
         '
@@ -163,7 +163,7 @@ Partial Class Menu
     Friend WithEvents SupplierToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PenggunaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BarangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PembelianToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents StokToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TransaksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PembelianToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LaporanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
