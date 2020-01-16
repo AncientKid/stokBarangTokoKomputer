@@ -10,9 +10,9 @@ Public Class Login
         Dim pass As String
         If tb_password.Text.Trim.Length > 0 Then
             Using md5Hash As MD5 = MD5.Create()
-                pass = MHash.GetMd5Hash(md5Hash, tb_password.Text.Trim)
+                pass = Hash.GetMd5Hash(md5Hash, tb_password.Text.Trim)
 
-                If MHash.VerifyMd5Hash(md5Hash, tb_password.Text.Trim, pass) Then
+                If Hash.VerifyMd5Hash(md5Hash, tb_password.Text.Trim, pass) Then
                     Console.WriteLine("Hash sama")
                 Else
                     Console.WriteLine("Hash berbeda")
@@ -22,12 +22,12 @@ Public Class Login
             pass = Nothing
         End If
 
-        Sql = "select * from pengguna where email = '" & tb_username.Text.Trim & "' and " & _
+        Sql = "select * from pengguna where email = '" & tb_username.Text.Trim & "' and " &
                 "pwd = '" & pass & "' and aktif = true"
 
-        MProgress.showProgress(ProgressBar1)
+        Progress.showProgress(ProgressBar1)
         Dim dt As DataTable = Await Task(Of DataTable).Factory.StartNew(Function() koneksi.getList(Sql))
-        MProgress.hideProgress(ProgressBar1)
+        Progress.hideProgress(ProgressBar1)
 
         If dt.Rows.Count > 0 Then
             'FMenu.Show()
@@ -35,7 +35,6 @@ Public Class Login
         Else
             MsgBox("Data tak ditemukan", vbOKOnly + vbExclamation, "Pesan")
         End If
-    End Sub
     End Sub
 
     Private Sub bt_clear_Click(sender As Object, e As EventArgs) Handles bt_clear.Click

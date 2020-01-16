@@ -14,23 +14,19 @@ Public Class stokBarang
     Async Function loadBarang() As Threading.Tasks.Task
         Dim sql As String = "select id_barang, nama from barang"
 
-        MProgress.showProgress(ProgressBar1)
+        Progress.showProgress(ProgressBar1)
 
         'ambil data table
-        dtBarang = Await Task(Of DataTable).Factory.StartNew(Function() MKoneksi.getList(sql))
+        dtBarang = Await Task(Of DataTable).Factory.StartNew(Function() Koneksi.getList(sql))
 
         cb_barang.DataSource = dtBarang
         cb_barang.DisplayMember = "nama"
         cb_barang.ValueMember = "id_barang"
 
-        ComboBox1_SelectedIndexChanged(Nothing, Nothing)
+        cb_barang_SelectedIndexChanged(Nothing, Nothing)
 
-        MProgress.hideProgress(ProgressBar1)
+        Progress.hideProgress(ProgressBar1)
     End Function
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-    End Sub
 
     Private Sub cb_barang_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_barang.SelectedIndexChanged
 
@@ -44,7 +40,7 @@ Public Class stokBarang
             lst.SubItems.Add(tb_qty.Text)
 
         End With
-        stok.hitungTotal()
+        'stok.hitungTotal()
         Close()
     End Sub
 End Class

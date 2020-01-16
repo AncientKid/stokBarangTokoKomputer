@@ -22,6 +22,7 @@ Partial Class stok
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lv_stok = New System.Windows.Forms.ListView()
@@ -38,6 +39,7 @@ Partial Class stok
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.cb_supplier = New System.Windows.Forms.ComboBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -69,6 +71,7 @@ Partial Class stok
         'lv_stok
         '
         Me.lv_stok.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lv_stok.HideSelection = False
         Me.lv_stok.Location = New System.Drawing.Point(10, 10)
         Me.lv_stok.Name = "lv_stok"
         Me.lv_stok.Size = New System.Drawing.Size(540, 139)
@@ -204,6 +207,11 @@ Partial Class stok
         Me.TextBox2.Size = New System.Drawing.Size(163, 47)
         Me.TextBox2.TabIndex = 2
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
         'stok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -237,4 +245,5 @@ Partial Class stok
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents cb_supplier As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 End Class

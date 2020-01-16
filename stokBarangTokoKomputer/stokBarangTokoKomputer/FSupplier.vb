@@ -9,19 +9,19 @@ Public Class FSupplier
         Dim sql As String
 
         If tempID = 0 Then
-            sql = "insert into supplier (nama, alamat, telepon) " & _
-            "values ('" & TextBox1.Text.Trim & "' , '" & TextBox2.Text.Trim & "', " & _
+            sql = "insert into supplier (nama_supplier, alamat, telepon) " &
+            "values ('" & TextBox1.Text.Trim & "' , '" & TextBox2.Text.Trim & "', " &
             "'" & TextBox4.Text.Trim & "')"
         Else
-            sql = "update supplier set nama = '" & TextBox1.Text.Trim & "', " & _
-                "alamat = '" & TextBox2.Text.Trim & "', telepon = '" & TextBox4.Text.Trim & "' " & _
+            sql = "update supplier set nama_supplier = '" & TextBox1.Text.Trim & "', " &
+                "alamat = '" & TextBox2.Text.Trim & "', telepon = '" & TextBox4.Text.Trim & "' " &
                 "where id_supplier = " & tempID
         End If
 
-        MProgress.showProgress(ProgressBar1)
-        Dim myTask = Task.Factory.StartNew(Sub() MKoneksi.exec(sql))
+        Progress.showProgress(ProgressBar1)
+        Dim myTask = Task.Factory.StartNew(Sub() Koneksi.exec(sql))
         Task.WaitAll(myTask) 'menunggu hingga selesai
-        MProgress.hideProgress(ProgressBar1)
+        Progress.hideProgress(ProgressBar1)
 
         kosong()
         Call loadGrid(Nothing)
@@ -37,10 +37,10 @@ Public Class FSupplier
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim sql As String = "delete from supplier where id_supplier = " & tempID
 
-        MProgress.showProgress(ProgressBar1)
-        Dim myTask = Task.Factory.StartNew(Sub() MKoneksi.exec(sql))
+        Progress.showProgress(ProgressBar1)
+        Dim myTask = Task.Factory.StartNew(Sub() Koneksi.exec(sql))
         Task.WaitAll(myTask) 'menunggu hingga selesai
-        MProgress.hideProgress(ProgressBar1)
+        Progress.hideProgress(ProgressBar1)
 
         kosong()
         Call loadGrid(Nothing)
@@ -56,18 +56,18 @@ Public Class FSupplier
     End Sub
 
     Async Function loadGrid(ByVal cari As String) As Task
-        MProgress.showProgress(ProgressBar1)
+        Progress.showProgress(ProgressBar1)
 
         Dim sql As String
 
         If cari = Nothing Then
             sql = "select * from supplier"
         Else
-            sql = "select * from supplier where nama like '%" & cari & "%' " & _
+            sql = "select * from supplier where nama_supplier like '%" & cari & "%' " &
                     "or alamat like '%" & cari & "%' or telepon like '%" & cari & "%'"
         End If
 
-        Dim dt As DataTable = Await Task(Of DataTable).Factory.StartNew(Function() MKoneksi.getList(sql))
+        Dim dt As DataTable = Await Task(Of DataTable).Factory.StartNew(Function() Koneksi.getList(sql))
 
         ListView1.Items.Clear()
 
@@ -79,7 +79,7 @@ Public Class FSupplier
         Next
 
         tempID = 0
-        MProgress.hideProgress(ProgressBar1)
+        Progress.hideProgress(ProgressBar1)
     End Function
 
     Private Sub FNSupplier_Load(sender As Object, e As EventArgs) Handles MyBase.Load
